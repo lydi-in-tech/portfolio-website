@@ -4,14 +4,74 @@ body{
     min-height:100vh;
     font-family:'Poppins', sans-serif;
 
-    background: linear-gradient(
-        135deg,
-        #E8D0A9 0%,
-        #E3C696 25%,
-        #DDBA84 50%,
-        #E6CCAA 75%,
-        #F4E7D7 100%
-    );
+    background-image: url("../images/nude-tan-gradient-background-with-golden-lines-to-create-a-trendy-cover-beige-texture-for-web-design-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     color:#4A3124;
+}
+
+html, body{
+    height:100%;
+    margin:0;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+main{
+    flex:1;
+}
+
+footer{
+    width:100%;
+    padding:20px 0;
+    display:flex;
+    flex-direction:column;   /* Stack items vertically */
+    justify-content:center;
+    align-items:center;
+    gap: 2px;                /* Space between name and icons */
+
+    color:black;
+    font-size:15px;
+}
+
+footer p{
+    margin:0;
+    transform: translateY(4px);
+    font-size: 14px;
+    font-weight: bold;
+}
+.contact-info a{
+    color:#470007;
+    font-size:25px;
+    margin:5px 0;
+    display:inline-block;
+    transition:all 0.3s ease;
+}
+
+.contact-info a:hover{
+    transform:translateY(-4px) scale(1.25);
+    color:#B88A4A;
+}.contact-info{
+    display:flex;
+    gap:20px;
+}
+
+.contact-info a{
+    color:#470007;
+    font-size:28px;
+    text-decoration:none;
+    display:inline-block;
+    transition:all .3s ease;
+}
+
+.contact-info a:hover{
+    color:#B88A4A;
+    transform:translateY(-3px) scale(1.2);
 }
