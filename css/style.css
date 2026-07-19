@@ -75,3 +75,43 @@ footer p{
     color:#B88A4A;
     transform:translateY(-3px) scale(1.2);
 }
+
+/* Navigation tabs */
+.nav-tabs .nav-link{
+    color: #470007;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-tabs .nav-link:hover{
+    background-color: #470007;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Active tab */
+.nav-tabs .nav-link.active{
+    background-color: #470007;
+    color: white;
+    border-radius: 8px;}
+
+    .nav-tabs{
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link{
+    border: none;
+}
+
+.nav-tabs .nav-link:hover{
+    border: none;
+}
+
+.logo{
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #470007;
+}
