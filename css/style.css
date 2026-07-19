@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    font-family:'Poppins', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #E8D0A9 0%,
+        #E3C696 25%,
+        #DDBA84 50%,
+        #E6CCAA 75%,
+        #F4E7D7 100%
+    );
+
+    color:#4A3124;
+}
