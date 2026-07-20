@@ -115,3 +115,563 @@ footer p{
     font-weight: 700;
     color: #470007;
 }
+
+/* ==========================================
+              HERO SECTION
+========================================== */
+
+.hero{
+    width:90%;
+    max-width:1400px;
+    min-height:90vh;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:80px;
+}
+
+/* ==========================================
+            LEFT SIDE
+========================================== */
+
+.hero-content{
+    flex:1;
+}
+
+.hero-greeting{
+    font-size:24px;
+    color:#470007;
+    margin-bottom:15px;
+}
+
+.hero-content h1{
+
+    font-size:72px;
+    color:#470007;
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content h2{
+
+    font-size:30px;
+    font-weight:500;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.hero-role{
+
+    font-size:26px;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+    margin-bottom:30px;
+
+}
+
+.hero-quote{
+
+    font-size:22px;
+
+    color:#7A5C2E;
+
+    font-style:italic;
+
+    margin-bottom:45px;
+
+}
+
+/* ==========================================
+               BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    text-decoration:none;
+
+    background:#470007;
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.btn-primary:hover{
+
+    background:#C8A96A;
+
+    color:#470007;
+
+}
+
+.btn-secondary{
+
+    text-decoration:none;
+
+    border:2px solid #470007;
+
+    color:#470007;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.btn-secondary:hover{
+
+    background:#470007;
+
+    color:white;
+
+}
+
+
+/* ==========================================
+             RIGHT SIDE
+========================================== */
+
+.hero-skills{
+
+    flex:1;
+
+    position:relative;
+
+    width:520px;
+
+    height:520px;
+
+}
+
+
+/* ==========================================
+          GLOWING BACKGROUND
+========================================== */
+
+.gold-glow{
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    background:#D6B06A;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    opacity:.45;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:pulseGold 7s ease-in-out infinite;
+
+}
+
+.burgundy-glow{
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    background:#470007;
+
+    border-radius:50%;
+
+    filter:blur(65px);
+
+    opacity:.20;
+
+    top:55%;
+
+    left:60%;
+
+    animation:pulseBurgundy 8s ease-in-out infinite;
+
+}
+
+/* ==========================================
+             SKILL BADGES
+========================================== */
+
+.skill{
+
+    position:absolute;
+
+    z-index:5;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 22px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:50px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.skill i{
+
+    font-size:30px;
+
+}
+
+.skill span{
+
+    font-weight:600;
+
+    color:#470007;
+
+}
+
+.skill:hover{
+
+    background:#470007;
+
+    transform:scale(1.08);
+
+    box-shadow:0 20px 35px rgba(71,0,7,.35);
+
+}
+
+.skill:hover span{
+
+    color:white;
+
+}
+
+/* ==========================================
+        FLOATING POSITIONS
+========================================== */
+
+.html{
+
+    top:15px;
+    left:180px;
+
+    animation:float 6s ease-in-out infinite;
+
+}
+
+.css{
+
+    top:100px;
+    left:25px;
+
+    animation:float 5s ease-in-out infinite .7s;
+
+}
+
+.javascript{
+
+    top:180px;
+    left:250px;
+
+    animation:float 5.5s ease-in-out infinite 1.2s;
+
+}
+
+.react{
+
+    top:270px;
+    left:120px;
+
+    animation:float 6.5s ease-in-out infinite 2s;
+
+}
+
+.java{
+
+    top:25px;
+    right:15px;
+
+    animation:float 5.5s ease-in-out infinite .4s;
+
+}
+
+.python{
+
+    bottom:30px;
+    left:20px;
+
+    animation:float 6s ease-in-out infinite 2.4s;
+
+}
+
+.csharp{
+
+    top:340px;
+    right:70px;
+
+    animation:float 5s ease-in-out infinite 1.8s;
+
+}
+
+.sql{
+
+    top:120px;
+    right:80px;
+
+    animation:float 6s ease-in-out infinite 1s;
+
+}
+
+.bootstrap{
+
+    bottom:120px;
+    left:220px;
+
+    animation:float 5s ease-in-out infinite 2.8s;
+
+}
+
+.git{
+
+    bottom:35px;
+    right:170px;
+
+    animation:float 6s ease-in-out infinite 2s;
+
+}
+
+.github{
+
+    bottom:70px;
+    right:-15px;
+
+    animation:float 5.5s ease-in-out infinite 3s;
+
+}
+
+.jira{
+
+    top:270px;
+    right:0;
+
+    animation:float 5.5s ease-in-out infinite 1.5s;
+
+}
+
+/* ==========================================
+             ANIMATIONS
+========================================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulseGold{
+
+    0%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+        opacity:.40;
+
+    }
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.1);
+
+        opacity:.55;
+
+    }
+
+    100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+        opacity:.40;
+
+    }
+
+}
+
+@keyframes pulseBurgundy{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.15;
+
+    }
+
+    50%{
+
+        transform:scale(1.12);
+
+        opacity:.25;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.15;
+
+    }
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:60px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-skills{
+
+    width:100%;
+
+    max-width:520px;
+
+    height:520px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    padding:60px 0;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+}
+
+.hero-content h2{
+
+    font-size:22px;
+
+}
+
+.hero-role{
+
+    font-size:20px;
+
+}
+
+.hero-quote{
+
+    font-size:18px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+.hero-skills{
+
+    transform:scale(.82);
+
+    transform-origin:center;
+
+}
+
+}
