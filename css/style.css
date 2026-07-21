@@ -752,3 +752,34 @@ footer p{
     color:#FFD76B;
 
 }
+
+/*CONTACT SECTION*/
+.contact{
+
+    padding:100px 10%;
+    text-align:center;
+
+}
+
+.contact-title{
+
+    font-size:48px;
+    font-weight:700;
+    font-family:'Cinzel', serif;
+    color:#470007;
+
+    margin-bottom:20px;
+
+}
+
+.contact-intro{
+
+    max-width:750px;
+    margin:0 auto;
+
+    font-size:18px;
+    line-height:1.9;
+
+    color:#3E342D;
+
+}
