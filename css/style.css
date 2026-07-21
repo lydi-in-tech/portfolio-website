@@ -776,10 +776,166 @@ footer p{
 
     max-width:750px;
     margin:0 auto;
-
     font-size:18px;
     line-height:1.9;
-
     color:#3E342D;
+
+}
+
+.contact-info{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:60px;
+
+}
+
+.contact-card{
+
+    width:190px;
+    padding:15px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    text-align:center;
+    transition:0.3s;
+
+}
+.contact-card:hover{
+
+    transform:translateY(-8px);
+    background:#470007;
+    color:white;
+
+}
+
+.contact-card i{
+
+    font-size:28px;
+    color:#C8A96A;
+    margin-bottom:8px;
+
+}
+
+.contact-card h3{
+
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:5px;
+
+}
+
+.contact-card p{
+
+    font-size:14px;
+    line-height:1.5;
+    margin:0;
+
+}
+
+.connect{
+
+    margin-top:80px;
+    text-align:center;
+
+}
+
+.connect-title{
+
+    font-family:'Cinzel', serif;
+    font-size:42px;
+    color:#470007;
+    margin-bottom:10px;
+
+}
+
+.connect-text{
+
+    font-size:17px;
+    color:#4b4b4b;
+    margin-bottom:45px;
+
+}
+
+.social-icons{
+
+    display:flex;
+    justify-content:center;
+    gap:55px;
+    flex-wrap:wrap;
+
+}
+
+.social-icons a{
+
+    text-decoration:none;
+    color:#470007;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.icon-circle{
+
+    width:75px;
+    height:75px;
+
+    border:2px solid #C8A96A;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:all .35s ease;
+
+    backdrop-filter:blur(4px);
+
+}
+
+.icon-circle i{
+
+    font-size:34px;
+
+    color:#470007;
+
+    transition:.35s;
+
+}
+
+.social-icons span{
+
+    margin-top:15px;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover .icon-circle{
+
+    transform:translateY(-8px) scale(1.08);
+    border-color:#470007;
+    box-shadow:0 0 25px rgba(200,169,106,.55);
+
+}
+
+.social-icons a:hover i{
+
+    color:#C8A96A;
+
+}
+
+.social-icons a:hover span{
+
+    color:#470007;
 
 }
