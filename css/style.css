@@ -115,6 +115,56 @@ footer p{
     font-weight: 700;
     color: #470007;
 }
+.dropdown-menu{
+
+    background: rgba(255, 255, 255, 0.8);
+
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 15px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+    padding: 8px;
+
+}
+
+.dropdown-item{
+
+    color:#470007;
+
+    border-radius:10px;
+
+    padding:10px 15px;
+
+    transition:all .3s ease;
+
+    font-weight:500;
+
+}
+
+.dropdown-item:hover{
+
+    background: rgba(71,0,7,0.9);
+
+    color:white;
+
+}
+
+/* Clicked item */
+
+.dropdown-item:active{
+
+    background:#470007;
+
+    color:white;
+
+}
+
+
 
 /* HERO SECTION */
 
@@ -938,4 +988,16 @@ footer p{
 
     color:#470007;
 
+}
+
+/*fixed nav bar*/
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+     backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
 }
