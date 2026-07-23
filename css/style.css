@@ -30,50 +30,59 @@ main{
 
 footer{
     width:100%;
-    padding:20px 0;
     display:flex;
     flex-direction:column;   /* Stack items vertically */
-    justify-content:center;
     align-items:center;
-    gap: 2px;                /* Space between name and icons */
+    justify-content:center;
+    gap: 0px;                /* Space between name and icons */
 
     color:black;
     font-size:15px;
 }
 
 footer p{
-    margin:0;
-    transform: translateY(4px);
+    margin-top: 40px;
+    margin-bottom: -50px;
+    padding:0 !important;
+    line-height:1;
     font-size: 14px;
     font-weight: bold;
 }
-.contact-info a{
-    color:#470007;
-    font-size:25px;
-    margin:5px 0;
-    display:inline-block;
-    transition:all 0.3s ease;
+
+.contact-info{
+      margin-top:-8px;
+      margin-bottom: 10px;
+      padding:0;    
 }
 
-.contact-info a:hover{
-    transform:translateY(-4px) scale(1.25);
-    color:#B88A4A;
-}.contact-info{
-    display:flex;
-    gap:20px;
+ .contact-info i{
+    display:block;
+    line-height:1;
 }
 
 .contact-info a{
     color:#470007;
     font-size:28px;
     text-decoration:none;
-    display:inline-block;
-    transition:all .3s ease;
+    transition:all 0.3s ease;
 }
 
 .contact-info a:hover{
-    color:#B88A4A;
     transform:translateY(-3px) scale(1.2);
+    color:#B88A4A;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    .contact-info{
+        gap:20px;
+    }
+
+    .contact-info a{
+        font-size:24px;
+    }
+
 }
 
 /* Navigation tabs */
